@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>О проекте | iorepo</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <div class="brand">
+          <span class="brand-mark">i</span>
+          <span>iorepo</span>
+        </div>
+        <nav class="menu">
+          <a href="about.html" data-i18n="nav.about">О проекте</a>
+          <a href="repositories.html" data-i18n="nav.repos">Репозитории</a>
+          <a href="help.html" data-i18n="nav.help">Помощь</a>
+          <a href="credits.html" data-i18n="nav.credits">Кредиты</a>
+          <button class="lang-toggle" type="button" data-lang-toggle>EN</button>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container page-shell">
+      <div class="page-card">
+        <p class="eyebrow">О проекте</p>
+        <h1>Классический сайт для репозиториев iOS</h1>
+        <p>
+          iorepo — каталог репозиториев для Cydia и jailbreak-экосистемы. Проект сделан
+          в простом формате и рассчитан на быстрый просмотр и подключение источников.
+        </p>
+
+        <div class="about-grid" style="margin-top: 28px;">
+          <article class="info-card">
+            <h3>Простой каталог</h3>
+            <p>Каждый репозиторий отображается отдельно и имеет собственную страницу.</p>
+          </article>
+          <article class="info-card">
+            <h3>Быстрый доступ</h3>
+            <p>Нужный источник можно открыть и скопировать за несколько секунд.</p>
+          </article>
+          <article class="info-card">
+            <h3>Чистый интерфейс</h3>
+            <p>Сайт без лишнего визуального шума и без перегруженных блоков.</p>
+          </article>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-row">
+        <div class="brand">
+          <span class="brand-mark">i</span>
+          <span>iorepo</span>
+        </div>
+        <p>© <span id="year"></span> iorepo</p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

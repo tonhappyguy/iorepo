@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iorepo</title>
+    <meta
+      name="description"
+      content="iorepo — репозиторий для Cydia и просмотр пакетов через GitHub Pages"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <div class="brand">
+          <span class="brand-mark">i</span>
+          <span>iorepo</span>
+        </div>
+        <nav class="menu">
+          <a href="about.html" data-i18n="nav.about">О проекте</a>
+          <a href="repositories.html" data-i18n="nav.repos">Репозитории</a>
+          <a href="help.html" data-i18n="nav.help">Помощь</a>
+          <a href="credits.html" data-i18n="nav.credits">Кредиты</a>
+          <button class="lang-toggle" type="button" data-lang-toggle>EN</button>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-text">
+            <p class="eyebrow" data-i18n="hero.eyebrow">Jailbreak • Cydia • GitHub Pages</p>
+            <h1 data-i18n="hero.title">Минималистичный репозиторий для iOS</h1>
+            <p class="lead" data-i18n="hero.lead">
+              Сайт для просмотра репозиториев и быстрого подключения источников в Cydia.
+            </p>
+            <div class="actions">
+              <a class="button primary" href="repositories.html" data-i18n="hero.primary">Смотреть репозитории</a>
+              <a class="button secondary" href="help.html" data-i18n="hero.secondary">Помощь</a>
+            </div>
+            <ul class="stats">
+              <li><strong>Repo</strong><span data-i18n="stats.catalog">Каталог</span></li>
+              <li><strong>Cydia</strong><span data-i18n="stats.connect">Подключение</span></li>
+              <li><strong>iOS</strong><span data-i18n="stats.support">Поддержка</span></li>
+            </ul>
+          </div>
+
+          <div class="hero-card">
+            <div class="card-header">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <div class="code-window">
+              <pre><code id="repo-source-code">Загружаем доступные репозитории…</code></pre>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section-header">
+            <p class="eyebrow" data-i18n="about.eyebrow">О проекте</p>
+            <h2 data-i18n="about.title">Простой каталог репозиториев</h2>
+          </div>
+          <div class="about-grid">
+            <article class="info-card">
+              <h3 data-i18n="about.card1.title">Показ источников</h3>
+              <p data-i18n="about.card1.text">Сайт показывает доступные репозитории и даёт быстрый доступ к их данным.</p>
+            </article>
+            <article class="info-card">
+              <h3 data-i18n="about.card2.title">Подключение в Cydia</h3>
+              <p data-i18n="about.card2.text">Каждый репозиторий имеет отдельную страницу с нужной строкой для добавления.</p>
+            </article>
+            <article class="info-card">
+              <h3 data-i18n="about.card3.title">Минимализм</h3>
+              <p data-i18n="about.card3.text">Простой интерфейс без лишних блоков, уровней и навигационных шумов.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt" id="repos">
+        <div class="container">
+          <div class="section-header">
+            <p class="eyebrow">Репозитории</p>
+            <h2>Просмотр доступных источников</h2>
+          </div>
+          <div id="repo-list" class="repo-list"></div>
+        </div>
+      </section>
+
+      <section class="section" id="help">
+        <div class="container">
+          <div class="section-header">
+            <p class="eyebrow">Помощь</p>
+            <h2>Как использовать репозиторий</h2>
+          </div>
+          <div class="help-grid">
+            <article class="help-card">
+              <span class="help-index">1</span>
+              <h3>Подключите источник</h3>
+              <p>Вставьте строку репозитория в Cydia или другой пакетный менеджер.</p>
+            </article>
+            <article class="help-card">
+              <span class="help-index">2</span>
+              <h3>Проверьте структуру</h3>
+              <p>Убедитесь, что в репозитории есть Packages, Release и description.txt.</p>
+            </article>
+            <article class="help-card">
+              <span class="help-index">3</span>
+              <h3>Используйте сайт</h3>
+              <p>Достаточно открыть каталог и скопировать нужную ссылку в Cydia.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="credits">
+        <div class="container">
+          <div class="section-header">
+            <p class="eyebrow">Кредиты</p>
+            <h2>Команда и благодарности</h2>
+          </div>
+          <div class="credits-grid">
+            <article class="credit-card">
+              <h3>Design</h3>
+              <p>Минималистичный белый интерфейс для стабильного и аккуратного отображения данных.</p>
+            </article>
+            <article class="credit-card">
+              <h3>Repo Hosting</h3>
+              <p>Статический хостинг GitHub Pages с отдельными репозиториями и страницами.</p>
+            </article>
+            <article class="credit-card">
+              <h3>Open source</h3>
+              <p>Проект построен как простой статический каталог репозиториев для Cydia и GitHub Pages.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="contact">
+      <div class="container footer-row">
+        <div>
+          <div class="brand">
+            <span class="brand-mark">i</span>
+            <span>iorepo</span>
+          </div>
+        </div>
+        <p>© <span id="year"></span> iorepo</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

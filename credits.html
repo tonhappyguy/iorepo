@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Кредиты | iorepo</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <div class="brand">
+          <span class="brand-mark">i</span>
+          <span>iorepo</span>
+        </div>
+        <nav class="menu">
+          <a href="about.html" data-i18n="nav.about">О проекте</a>
+          <a href="repositories.html" data-i18n="nav.repos">Репозитории</a>
+          <a href="help.html" data-i18n="nav.help">Помощь</a>
+          <a href="credits.html" data-i18n="nav.credits">Кредиты</a>
+          <button class="lang-toggle" type="button" data-lang-toggle>EN</button>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container page-shell">
+      <div class="page-card">
+        <p class="eyebrow">Кредиты</p>
+        <h1>Благодарности и проектная идея</h1>
+
+        <div class="credits-grid" style="margin-top: 24px;">
+          <article class="credit-card">
+            <h3>Design</h3>
+            <p>Классический и строгий стиль для удобного просмотра и чтения.</p>
+          </article>
+          <article class="credit-card">
+            <h3>Repo hosting</h3>
+            <p>Репозитории показаны как отдельные элементы каталога и доступны по ссылкам.</p>
+          </article>
+          <article class="credit-card">
+            <h3>GitHub</h3>
+            <p>tonhappyguy</p>
+          </article>
+          <article class="credit-card">
+            <h3>Open source</h3>
+            <p>Проект создаётся как открытый каталог репозиториев и пакетов для Cydia.</p>
+          </article>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-row">
+        <div class="brand">
+          <span class="brand-mark">i</span>
+          <span>iorepo</span>
+        </div>
+        <p>© <span id="year"></span> iorepo · GitHub: tonhappyguy</p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

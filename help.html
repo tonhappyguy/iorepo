@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Помощь | iorepo</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <div class="brand">
+          <span class="brand-mark">i</span>
+          <span>iorepo</span>
+        </div>
+        <nav class="menu">
+          <a href="about.html" data-i18n="nav.about">О проекте</a>
+          <a href="repositories.html" data-i18n="nav.repos">Репозитории</a>
+          <a href="help.html" data-i18n="nav.help">Помощь</a>
+          <a href="credits.html" data-i18n="nav.credits">Кредиты</a>
+          <button class="lang-toggle" type="button" data-lang-toggle>EN</button>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container page-shell">
+      <div class="page-card">
+        <p class="eyebrow">Помощь</p>
+        <h1>Как подключить репозиторий</h1>
+        <p>Выберите интересующий репозиторий, откройте его страницу и скопируйте строку для Cydia.</p>
+
+        <ul>
+          <li>Откройте нужный репозиторий в каталоге.</li>
+          <li>Скопируйте строку вида: deb https://example.com/repo/ ./</li>
+          <li>Вставьте её в Cydia или другой менеджер пакетов.</li>
+          <li>Убедитесь, что в папке присутствуют Files: Packages, Release и description.txt.</li>
+        </ul>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-row">
+        <div class="brand">
+          <span class="brand-mark">i</span>
+          <span>iorepo</span>
+        </div>
+        <p>© <span id="year"></span> iorepo</p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
